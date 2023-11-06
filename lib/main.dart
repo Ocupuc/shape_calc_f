@@ -68,7 +68,7 @@ class _MyAppState extends State<MyApp> {
         GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: const [
-        Locale('ru', 'RU'), // Русский язык
+        Locale('ru', 'RU'),
       ],
       home: Scaffold(
         appBar: AppBar(
