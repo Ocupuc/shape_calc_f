@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:shape_calc_f/parallelogram_form.dart';
+import 'package:shape_calc_f/rhombus_form.dart';
+import 'package:shape_calc_f/square_form.dart';
+import 'package:shape_calc_f/trapezoid_form.dart';
+import 'package:shape_calc_f/triangle_form.dart';
 import 'circle_form.dart';
 import 'rectangle_form.dart';
 import 'api_service.dart';
@@ -77,6 +82,16 @@ class _MyAppState extends State<MyApp> {
                     CircleForm(apiService: _apiService),
                   if (_selectedFigure == 'Прямоугольник')
                     RectangleForm(apiService: _apiService),
+                  if (_selectedFigure == 'Квадрат')
+                    SquareForm(apiService: _apiService),
+                  if (_selectedFigure == 'Параллелограмм')
+                    ParallelogramForm(apiService: _apiService),
+                  if (_selectedFigure == 'Ромб')
+                    RhombusForm(apiService: _apiService),
+                  if (_selectedFigure == 'Трапеция')
+                    TrapezoidForm(apiService: _apiService),
+                  if (_selectedFigure == 'Треугольник')
+                    TriangleForm(apiService: _apiService),
                 ],
               ),
             ),
